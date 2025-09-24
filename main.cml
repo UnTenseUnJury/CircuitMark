@@ -1,0 +1,9 @@
+# This is an example cml program
+
+ground GND
+node vcc, n1, n2, n3, n4
+battery  V1 +9V from=GND to=vcc
+resistor R1 1k from=vcc to=n1
+resistor R2 2.2k from=n1 to=n2
+resistor R3 470 from=n2 to=GND
+resistor R4 580 from n3 to n4
